@@ -177,18 +177,16 @@ function exportToCsv(e, t) {
   var scrollInterval;
   
   function autoScroll() {
-    // Vérifier si on est arrivé tout en bas de la page
+    // verify if we reach the end of the page
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
-      // Arrêter le scroll automatique
-      stopAutoScroll();
+      stopAutoScroll(); //then we stop
     } else {
-      // Faites défiler automatiquement la page vers le bas
+      // else we continue
       window.scrollTo(0, document.body.scrollHeight);
     }
   }
   
   function stopAutoScroll() {
-    // Arrête le scroll automatique lorsque vous quittez la page du groupe
     clearInterval(scrollInterval);
   }
   
@@ -208,10 +206,10 @@ function exportToCsv(e, t) {
       e.apply(this, arguments);
     };
   
-    // Auto-scroll toutes les 2 secondes
+    // Auto-scroll every 2s
     scrollInterval = setInterval(autoScroll, 2000);
   
-    // Écoute l'événement "unload" pour arrêter le scroll automatique avant de quitter la page
+    // listens "unload" event to stop scrolling before leaving page
     window.addEventListener("unload", stopAutoScroll);
   }
   
