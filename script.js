@@ -188,6 +188,7 @@ function exportToCsv(e, t) {
   
   function stopAutoScroll() {
     clearInterval(scrollInterval);
+      console.log("scroll stopped")
   }
   
   function main() {
