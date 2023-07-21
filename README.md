@@ -2,6 +2,8 @@
  
 The file present in this project is a script to scrape Facebook group members and export them into a CSV file. Copy-paste the script into your Chrome console. 
 
+(script2.js is the script where the auto-scroll doesn't stop)
+
 ## How to run the script?
 
 To proceed, follow these steps:
