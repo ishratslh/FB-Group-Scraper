@@ -206,4 +206,10 @@ function exportToCsv(e, t) {
     // Écoute l'événement "unload" pour arrêter le scroll automatique avant de quitter la page
     window.addEventListener("unload", stopAutoScroll);
   }
+
+window.members_list = window.members_list || [
+  ["Profile Id", "Full Name", "ProfileLink", "Bio", "Image Src", "Groupe Id", "Group Joining Text", "Profile Type"],
+];
+main();
+
   
