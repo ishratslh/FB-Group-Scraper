@@ -201,7 +201,7 @@ function exportToCsv(e, t) {
     };
   
     // Auto-scroll toutes les 2 secondes
-    var scrollInterval = setInterval(autoScroll, 2000);
+    var scrollInterval = setInterval(autoScroll, 20000);
   
     // Écoute l'événement "unload" pour arrêter le scroll automatique avant de quitter la page
     window.addEventListener("unload", stopAutoScroll);
